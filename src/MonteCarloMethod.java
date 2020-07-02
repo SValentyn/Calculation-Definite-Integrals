@@ -21,7 +21,7 @@ public class MonteCarloMethod {
         b = scanner.nextDouble();
 
         if (a == b) {
-            System.out.println("\nThe approximate value of the integral equals: 0.0");
+            System.out.println("\nThe value of the integral equals: 0.0");
             return;
         } else if (a > b) {
             System.out.print("\nAttention! The lower limit of the integral is greater than the upper. That was the idea, right?");
@@ -51,7 +51,7 @@ public class MonteCarloMethod {
     /**
      * Calculation of the integral by generating random points
      */
-    private static double calculationIntegralUsingRandomPoints(double a, double b) {
+    public static double calculationIntegralUsingRandomPoints(double a, double b) {
         Random random = new Random();
 
         double max; // maximum function value

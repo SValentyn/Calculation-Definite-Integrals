@@ -11,7 +11,7 @@ public class TrapezoidalMethod {
         Scanner scanner = new Scanner(System.in);
         double a, b;
 
-        System.out.println("Find an approximate solution to the integral. Integrand: (x^2 + 1.8) / (x^3 +7.9)");
+        System.out.println("Find an approximate solution to the integral. Integrand: (x^2 + 1.8) / (x^3 + 7.9)");
 
         System.out.print("Enter the lower limit of integration a = ");
         a = scanner.nextDouble();
@@ -20,7 +20,7 @@ public class TrapezoidalMethod {
         b = scanner.nextDouble();
 
         if (a == b) {
-            System.out.println("\nThe approximate value of the integral equals: 0.0");
+            System.out.println("\nThe value of the integral equals: 0.0");
             return;
         } else if (a > b) {
             System.out.print("\nAttention! The lower limit of the integral is greater than the upper. That was the idea, right?");
@@ -29,7 +29,7 @@ public class TrapezoidalMethod {
         System.out.printf("\nThe approximate value of the integral equals: %.6f", calculationIntegral(a, b));
     }
 
-    private static double calculationIntegral(double a, double b) {
+    public static double calculationIntegral(double a, double b) {
         double h = (b - a) / NUMBER_OF_PARTITIONS; // step size
         double sum = function(a) + function(b);    // area
 

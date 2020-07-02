@@ -20,7 +20,7 @@ public class MidpointRectangleMethod {
         b = scanner.nextDouble();
 
         if (a == b) {
-            System.out.println("\nThe approximate value of the integral equals: 0.0");
+            System.out.println("\nThe value of the integral equals: 0.0");
             return;
         } else if (a > b) {
             System.out.print("\nAttention! The lower limit of the integral is greater than the upper. That was the idea, right?");
@@ -32,7 +32,7 @@ public class MidpointRectangleMethod {
     /**
      * The approximate value of the integral is equal to the sum of the areas of the rectangles.
      */
-    private static double calculationIntegral(double a, double b) {
+    public static double calculationIntegral(double a, double b) {
         double h = (b - a) / NUMBER_OF_PARTITIONS; // step size
         double sum = 0.0;                          // area
 
