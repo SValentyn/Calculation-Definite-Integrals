@@ -19,6 +19,13 @@ public class TrapezoidalMethod {
         System.out.print("Enter the upper limit of integration b = ");
         b = scanner.nextDouble();
 
+        if (a == b) {
+            System.out.println("\nThe approximate value of the integral equals: 0.0");
+            return;
+        } else if (a > b) {
+            System.out.print("\nAttention! The lower limit of the integral is greater than the upper. That was the idea, right?");
+        }
+
         System.out.printf("\nThe approximate value of the integral equals: %.6f", calculationIntegral(a, b));
     }
 
