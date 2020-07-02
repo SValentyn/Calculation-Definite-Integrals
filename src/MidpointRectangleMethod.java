@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class MiddleRectangleMethod {
+public class MidpointRectangleMethod {
 
     public final static int NUMBER_OF_PARTITIONS = 100;
 
